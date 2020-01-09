@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="overlay.css">
+    <title>Iso</title>
+</head>
+
+<body>
+
+    <!-- Main container -->
+    <div id="main-div" class="d-flex">
+
+        <!-- filter & sort & content  container -->
+        <div class="filter-sort-content">
+
+            <!-- filter & sort container -->
+            <div class="filter-sort">
+
+                <!-- FILTERING ----------------------------------------------------------------------------------------------------->
+                <div class="filter d-flex justify-content-around">
+
+                    <!-- ALL MAJORS ----------------------------->
+                    <div class="filter-item btn-group">
+                        <div class="dropdown">
+                            <div class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modules</div>
+                            <div class="dropdown-menu dropdown-menu-left">
+                                <button data-name="*" class="dropdown-item bg-dark my-2">All Modules</button>
+                                <button data-name=".webDevelopment" class="dropdown-item bg-primary my-2">Web
+                                    Development</button>
+                                <button data-name=".design" class="dropdown-item bg-success my-2">Design</button>
+                                <button data-name=".business" class="dropdown-item bg-danger my-2">Business</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- QUALIFICATIONS ----------------------------->
+                    <div class="filter-item btn-group">
+                        <div class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Qualifications</div>
+                        <div class="dropdown-menu">
+                            <button data-name=".webDevelopment.frontend"
+                                class="dropdown-item bg-primary my-2">Frontend</button>
+                            <button data-name=".webDevelopment.backend"
+                                class="dropdown-item bg-primary my-2">Backend</button>
+                            <button data-name=".design.webDesign" class="dropdown-item bg-success my-2">Web
+                                Design</button>
+                            <button data-name=".design.graphicDesign" class="dropdown-item bg-success my-2">Graphic
+                                Design</button>
+                            <button data-name=".business.accounting"
+                                class="dropdown-item bg-danger my-2">Accounting</button>
+                            <button data-name=".business.businessManagement"
+                                class="dropdown-item bg-danger my-2">Business
+                                Management</button>
+                        </div>
+                    </div>
+
+                    <!-- CERTIFICATION ----------------------------->
+                    <div class="filter-item btn-group">
+                        <div class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Certifications</div>
+                        <div class="dropdown-menu dropdown-menu-right">
+
+                            <button data-name=".html" class="dropdown-item bg-primary my-2">HTML</button>
+                            <button data-name=".css" class="dropdown-item bg-primary my-2">CSS</button>
+                            <button data-name=".javascript" class="dropdown-item bg-primary my-2">Javascript</button>
+
+                            <button data-name=".nodejs" class="dropdown-item bg-primary my-2">Node Js</button>
+                            <button data-name=".mongodb" class="dropdown-item bg-primary my-2">Mongo DB</button>
+                            <button data-name=".sql" class="dropdown-item bg-primary my-2">SQL</button>
+
+                            <button data-name=".ace" class="dropdown-item bg-success my-2">Adobe Expert (ACE)</button>
+                            <button data-name=".php" class="dropdown-item bg-success my-2">Zend PHP Engineer</button>
+                            <button data-name=".aws" class="dropdown-item bg-success my-2">Amazon Web Services</button>
+
+                            <button data-name=".animation" class="dropdown-item bg-success my-2">Animation</button>
+                            <button data-name=".mobileDevelopment" class="dropdown-item bg-success my-2">Mobile
+                                development</button>
+                            <button data-name=".copywritting"
+                                class="dropdown-item bg-success my-2">Copywritting</button>
+
+                            <button data-name=".cpa" class="dropdown-item bg-danger my-2">Public Accountant
+                                (CPA)</button>
+                            <button data-name=".cfa" class="dropdown-item bg-danger my-2">Financial Analyst
+                                (CFA)</button>
+                            <button data-name=".ea" class="dropdown-item bg-danger my-2">Enrolled Agent (EA)</button>
+
+                            <button data-name=".capm" class="dropdown-item bg-danger my-2">Project Management
+                                (CAPM)</button>
+                            <button data-name=".cbap" class="dropdown-item bg-danger my-2">Business Analysis
+                                (CBAP)</button>
+                            <button data-name=".cscp" class="dropdown-item bg-danger my-2">Supply Chain (CSCP)</button>
+
+                        </div>
+                    </div>
+
+                </div><!-- End of Filtering -->
+
+
+                <!-- SORTING ----------------------------------------------------------------------------------------------------->
+
+                <div class="sort d-flex justify-content-around mt-5 text-center">
+                    <div data-name="original-order" type="button" class="btn active-sort">Original Order</div>
+                    <div data-name="name" type="button" class="btn active">Name</div>
+                    <div data-name="random" type="button" class="btn active" aria-pressed="false">Random</div>
+                </div><!-- End of Sorting -->
+
+
+                <!-- ACTIVE DROPDOWN ----------------------------------------------------------------------------------------------------->
+
+                <div class="active-dropdown">All Modules</div>
+
+            </div><!-- End of filter & sort container -->
+
+
+            <!-- CONTENT ----------------------------------------------------------------------------------------------------->
+
+            <div class="grid content">
+
+                <!-- Web Development -->
+                <!-- Frontend -->
+                <div class="grid-item webDevelopment frontend html">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">HTML</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M010</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M017</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 3 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 358,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item webDevelopment frontend css">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">CSS</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M024</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M020</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 4 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 423,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item webDevelopment frontend javascript">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">JavaScript</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M030</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M027</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 6 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 523,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Backened -->
+                <div class="grid-item webDevelopment backend nodejs">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Node JS</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M033</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M012</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 8 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 652,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item webDevelopment backend mongodb">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">MongoDB</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M019</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M022</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 2 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 233,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item webDevelopment backend sql">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">SQL</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M011</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M008</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 4 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 409,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <!-- Web Design -->
+                <div class="grid-item design webDesign ace">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Adobe Certified Expert (ACE)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M021</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M018</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 16 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 819,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item design webDesign php">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Zend Certified PHP Engineer</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M026</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M014</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 8 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 419,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item design webDesign aws">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Amazon Web Services</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M016</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M029</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 16 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 919,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Graphic Design -->
+                <div class="grid-item design graphicDesign animation">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Animation</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M025</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M013</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 8 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 419,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item design graphicDesign mobileDevelopment">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Mobile development</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M025</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M013</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 8 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 419,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item design graphicDesign copywritting">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Copywritting</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M025</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M013</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 8 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 419,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Business-->
+                <!-- Accounting -->
+                <div class="grid-item business accounting cpa">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Public Accountant (CPA)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M015</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M043</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 16 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 749,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item business accounting cfa">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Financial Analyst (CFA)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M035</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M003</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 12 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 679,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item business accounting ea">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Enrolled Agent (EA)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M005</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M063</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 8 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 405,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Business Management -->
+                <div class="grid-item business businessManagement capm">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Project Management (CAPM)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M007</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M002</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 12 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 679,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item business businessManagement cbap">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Business Analysis (CBAP)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M007</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M002</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 12 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 679,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item business businessManagement cscp">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <h6 class="list-group-item title">Supply Chain (CSCP)</h6>
+                            <p class="list-group-item d-flex justify-content-around"><b>int. nbr:</b> M007</p>
+                            <p class="list-group-item d-flex justify-content-around"><b>ext. nbr:</b> M002</p>
+                            <p class="list-group-item d-flex justify-content-around time"><b>Time:</b> 12 weeks</p>
+                            <p class="list-group-item d-flex justify-content-around price"><b>Cost:</b> 679,00 €</p>
+                            <div class="d-flex card-footer">
+                                <button class="info-item-button open-btn">&#9776;</button>
+                                <button class="shop-item-button">+</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- End of Content -->
+
+        </div><!-- End of filter & sort & content  container -->
+
+
+        <!-- CART ----------------------------------------------------------------------------------------------------->
+
+        <section class="container content-section">
+            <!-- <h2 class="section-header">CART</h2> -->
+
+            <div class="cart-row cart-headers">
+                <span class="cart-item-header">ITEM</span>
+                <span class="cart-item-header">TIME</span>
+                <span class="cart-item-header">PRICE</span>
+                <!-- <span class="cart-quantity cart-header cart-column">QUANTITY</span> -->
+            </div>
+
+            <div class="cart-items">
+                <!-- appendedd data -->
+            </div>
+
+            <div class="cart-row cart-total">
+                <strong class="cart-item-total cart-total-title">Total</strong>
+                <span class="cart-item-total cart-total-time">0</span>
+                <span class="cart-item-total cart-total-price">0 €</span>
+            </div>
+
+            <button class="btn btn-dark btn-purchase" type="button">PURCHASE</button>
+        </section> <!-- End of Cart -->
+
+
+        <!-- ITEM MORE INFO OVERLAY ----------------------------------------------------------------------------------------------------->
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="close-btn"">&times;</a>
+            <div class="overlay-content">
+                <h1>Module Info:</h1>
+                <span id="overlay-title"></span>
+                <span id="overlay-time"></span>
+                <span id="overlay-price"></span>
+                <hr>
+                <h3>More about this Module:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure distinctio voluptates, blanditiis fuga possimus nesciunt, facilis veniam sapiente aliquid reiciendis, quae aut officia similique rem repellat at eos sint!</p>
+            </div>
+        </div>
+
+
+    </div><!-- End of main div -->
+
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script src="iso.js"></script>
+    <script src="cart.js" async></script>
+    <script src="active.js"></script>
+    <script src="overlay.js"></script>
+
+</body>
+
+</html>

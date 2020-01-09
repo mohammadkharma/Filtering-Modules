@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#main-div {
+    letter-spacing: 0.1em;
+}
+
+.filter-sort-content {
+    width: 65%;
+}
+
+.filter-sort {
+    background: black;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65%;
+    z-index: 1;
+    background: grey;
+    margin-bottom: 30px;
+    border-bottom: 3px double black;
+}
+
+.active-dropdown {
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5em;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px black;
+    padding: 5px;
+    background: beige;
+}
+
+.active-sort {
+    background: rgb(26, 26, 26) !important;
+    color: white !important;
+}
+
+.content {
+    margin-top: 12em !important;
+    margin-left: 1em;
+}
+
+.filter .btn, .sort div {
+    width: 18vw;
+    padding: 0;
+    background: beige;
+    color: black;
+    box-shadow: 0px 0px 8px 0px black;
+    font-weight: bold;
+}
+
+.filter button {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.filter button:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    text-align: center;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid black;
+    width: 18vw;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.dropdown-item:hover {
+    font-size: 18px;
+    transition: 0.3s;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+
+.grid-item {
+    width: 22%;
+    margin: 7px;
+}
+
+.grid-item.webDevelopment .shop-item-button, .grid-item.webDevelopment .info-item-button {
+    color: blue;
+}
+
+.grid-item.design .shop-item-button, .grid-item.design .info-item-button {
+    color: green;
+}
+
+.grid-item.business .shop-item-button, .grid-item.business .info-item-button {
+    color: red;
+}
+
+.grid-item.webDevelopment {
+    box-shadow: 0px 0px 8px 0px blue;
+}
+
+.grid-item.design {
+    box-shadow: 0px 0px 8px 0px green;
+}
+
+.grid-item.business {
+    box-shadow: 0px 0px 8px 0px red;
+}
+
+.card {
+    line-height: 10px;
+    padding: 0 auto;
+}
+
+.webDevelopment {
+    border: 2px solid blue;
+}
+
+.design {
+    border: 2px solid green;
+}
+
+.business {
+    border: 2px solid red;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    height: 80px;
+}
+
+.webDevelopment h6 {
+    background-color: blue
+}
+
+.design h6 {
+    background-color: green
+}
+
+.business h6 {
+    background-color: red
+}
+
+p {
+    font-size: 14px;
+}
+
+.shop-item-button, .info-item-button {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    margin: 10px auto;
+    font-weight: bolder;
+}
