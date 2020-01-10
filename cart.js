@@ -34,7 +34,7 @@ function ready() {
 // removing item from cart (used in 'ready' & 'addItemToCart')  
 function removeCartItem(event) {
     var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.parentElement.remove();
+    buttonClicked.parentElement.parentElement.remove();
     updateCartTotal();
 }
 
@@ -109,8 +109,9 @@ function updateCartTotal() {
     // total = Math.round(total * 100) / 100;
     document.getElementsByClassName('cart-total-price')[0].innerText = totalPrice + ',00 €';
     var calculatedTime = (totalTime < 4) ? totalTime + ' weeks' : Math.round(totalTime/4) + ' months'; 
+    
     document.getElementsByClassName('cart-total-time')[0].innerText = calculatedTime;
-
+    
 }
 
 // --------------------------------------------------------------------------------------------
@@ -120,8 +121,13 @@ function purchaseClicked() {
     // alert('Thank you for your purchase!');
     var cartItems = document.getElementsByClassName('cart-items')[0];
     while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
+        cartItems.removeChild(cartItems.firstChild);
+        
     }
     updateCartTotal();
+    var time = document.getElementsByClassName('cart-total-time')[0];
+    time.innerText = time.innerText.replace(' weeks', '');
+    var price = document.getElementsByClassName('cart-total-price')[0];
+    price.innerText = price.innerText.replace(',00 €', '');
 }
 

@@ -1,22 +1,20 @@
 .overlay {
-    height: 100%;
+    height: 74vh;
     width: 0;
     position: fixed;
-    z-index: 1;
-    top: 0;
+    z-index: 2;
+    bottom: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.877);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 1.5s;
 }
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 10%;
+    padding: 10px;
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
 }
 
 .overlay a {
@@ -34,8 +32,7 @@
 
 .overlay .close-btn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    right: 25px;
     font-size: 60px;
 }
 
@@ -44,6 +41,11 @@
     display: block;
     margin: auto;
     color: rgba(255, 255, 255, 0.829);
+}
+
+.overlay-content > h3 {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 @media screen and (max-height: 450px) {

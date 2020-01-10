@@ -19,7 +19,7 @@ function openNav(event) {
     overlayPrice.innerText = price;
     
     console.log(title, time, price);
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "65%";
 }
 
 var closeBtn = document.getElementsByClassName('close-btn')[0];
