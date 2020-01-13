@@ -108,9 +108,10 @@ function updateCartTotal() {
     // rounding the results to maximum two numbers after the decimal
     // total = Math.round(total * 100) / 100;
     document.getElementsByClassName('cart-total-price')[0].innerText = totalPrice + ',00 €';
-    var calculatedTime = (totalTime < 4) ? totalTime + ' weeks' : Math.round(totalTime/4) + ' months'; 
-    
-    document.getElementsByClassName('cart-total-time')[0].innerText = calculatedTime;
+    var calculatedFullTime = (totalTime < 7) ? totalTime + ' weeks' : Math.round(totalTime/4) + ' months'; 
+    document.getElementsByClassName('full-time')[0].innerHTML = `<b>Full Time:</b>` + calculatedFullTime;
+    var calculatedPartTime = (totalTime < 7) ? (totalTime * 2) + ' weeks' : Math.round(totalTime*2/4) + ' months'; 
+    document.getElementsByClassName('part-time')[0].innerHTML = `<b>Part Time:</b>` + calculatedPartTime;
     
 }
 
@@ -122,12 +123,13 @@ function purchaseClicked() {
     var cartItems = document.getElementsByClassName('cart-items')[0];
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild);
-        
     }
     updateCartTotal();
-    var time = document.getElementsByClassName('cart-total-time')[0];
-    time.innerText = time.innerText.replace(' weeks', '');
+    var fullTime = document.getElementsByClassName('full-time')[0];
+    fullTime.innerText = '0';
+    var partTime = document.getElementsByClassName('part-time')[0];
+    partTime.innerText = '0';
     var price = document.getElementsByClassName('cart-total-price')[0];
-    price.innerText = price.innerText.replace(',00 €', '');
+    price.innerText = '0';
 }
 
